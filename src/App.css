@@ -2,6 +2,7 @@
   text-align: center;
 }
 
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -14,12 +15,14 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: white;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  /* position: absolute;
+  top: 0; */
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -27,6 +30,69 @@
 .App-link {
   color: #61dafb;
 }
+
+.Categories-header{
+  background-color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: top;
+  font-size: calc(10px + 2vmin);
+  color: black;
+  padding-right: 10px;
+}
+
+.buttons{
+  background-color: white;
+  display: inline-block; 
+  margin-right: 20px;
+  text-align: center;
+  align-items: center;
+  padding-left: 69px;
+  padding-bottom: 5px;
+  height: 200px;
+  position: relative;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+
+.divider{
+  background-color: #282c34;
+  width:5px;
+  height:auto;
+  display:inline-block;
+}
+
+.form{
+  color: #282c34;
+  background-color: #282c34;
+}
+
+.label{
+  color: white;
+  background-color: #282c34;
+}
+
+.testing{
+  background-color: #282c34;
+}
+
+.body{
+  background-color: #282c34;
+}
+
+.NameForm{
+  color: #282c34;
+  background-color: #282c34;
+}
+
+
+
 
 @keyframes App-logo-spin {
   from {
