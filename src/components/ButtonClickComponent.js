@@ -9,15 +9,15 @@ function ButtonClick(){
     return (
         <div class="buttons">
         <div class="divider"/>
-        <button id="Animals" onClick={() => {navigate("/NameForm")}}>Animals</button>
+        <button id="Animals" onClick={() => {navigate("/Create")}}>Animals</button>
         <div class="divider"/>
-        <button id="Arts, Cultures, Humanities" onClick={() => {navigate("/NameForm")}}>Arts, Cultures, Humanities</button>
+        <button id="Arts, Cultures, Humanities" onClick={() => {navigate("/Create")}}>Arts, Cultures, Humanities</button>
         <div class="divider"/>
-        <button id="Community Development" onClick={() => {navigate("/NameForm")}}>Community Development</button>
+        <button id="Community Development" onClick={() => {navigate("/Create")}}>Community Development</button>
         <div class="divider"/>
-        <button id="Education" onClick={() => {navigate("/NameForm")}}>Education</button>
+        <button id="Education" onClick={() => {navigate("/Create")}}>Education</button>
         <div class="divider"/>
-        <button id="Environment" onClick={() => {navigate("/NameForm")}}>Environment</button>
+        <button id="Environment" onClick={() => {navigate("/Create")}}>Environment</button>
         <div class="divider"/>
         <button id="Health" onClick={() => {navigate("/NameForm")}}>Health</button>
         <div class="divider"/>

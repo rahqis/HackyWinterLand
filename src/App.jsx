@@ -8,7 +8,7 @@ import FunctionClick from './components/FunctionClickComponent';
 import { BrowserRouter as Router, Routes, Route, Link, Navigate, useNavigate } from "react-router-dom";
 // import logo from './logo.svg';
 import './App.css';
-import NameForm from './components/ZipCodeComponent';
+import Create from './components/ZipCodeComponent';
 import Category from './components/CategoryComponent';
 import ButtonClick from './components/ButtonClickComponent';
 
@@ -21,7 +21,7 @@ function App() {
     </div>
       <Routes>
         <Route path="/home" element={<Home/>}/>
-        <Route path="/NameForm" element={<NameForm/>}/>
+        <Route path="/Create" element={<Create/>}/>
         <Route path="/category" element={<Category/>}/>
       </Routes>
       <ButtonClick/>
