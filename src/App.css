@@ -32,15 +32,18 @@
   }
   
   .Categories-header{
-    background-color: white;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('https://ak.picdn.net/shutterstock/videos/20151721/thumb/1.jpg');
+  
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: top;
-    font-size: calc(10px + 2vmin);
-    color: black;
-    padding-right: 10px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #0f8a5f;
+    background-size: cover;
+    background-position: center center;
   }
   
   .buttons{
@@ -70,10 +73,11 @@
 
 }
   
+  
   .singleButton{
   
     transition-duration: 0.4s;
-    border:rgba(255, 0, 0, 0.527);
+    border: 1px solid rgba(255,215,0, 0.527);
     height: auto;
     font-size: 20px;
     color: black; 
@@ -82,12 +86,13 @@
   }
   
   .singleButton:hover{
-    background-color: rgba(255, 0, 0, 0.527);
+    background-color: rgba(255,215,0, 0.8);
     color: black;
   }
   
   .homeButton{
     transition-duration: 0.4s;
+    background-color: transparent;
     margin: 0;
     border: 2px solid #4CAF50;
     color: black;
@@ -128,7 +133,7 @@
   
   .label{
     color: white;
-    background-color: #282c34;
+    background-color: transparent;
   }
   
   .testing{
@@ -146,29 +151,35 @@
   
   .create {
     max-width: 600px;
-    margin: 0 auto;
+    margin: auto;
     text-align: center;
   }
   .create label {
     text-align: left;
     display: block;
+    padding-top: 15%;
+    font-size: 20px;
+    font-weight: bold;
   }
   .create h2 {
-    font-size: 25px;
-    color: rgb(107, 166, 185);
-    margin-bottom: 30px;
+    padding-top: 20%;
+    font-size: 30px;
+    color:#F5624D;
+    margin-top: 0;
   }
   .create input, .create textarea, .create select {
     width: 100%;
     padding: 6px 10px;
     margin: 10px 0;
-    border: 1px solid #ddd;
+    background-color: transparent;
+    border: 1px solid rgba(221, 221, 221, 0.616);
     box-sizing: border-box;
     display: block;
   }
   
   .enterButton{
     transition-duration: 0.4s;
+    background-color: transparent;
     border: 2px solid grey;
     justify-content: center;
     align-items: center;
@@ -178,7 +189,7 @@
     padding: 0px 14px;
     margin: 0;
     position: absolute;
-    top: 25%;
+    top: 50%;
     left: 47%;
   
   }
@@ -188,6 +199,17 @@
     color: black;
   }
   
+  .zipCodeBanner{
+    position:relative;
+    top: 0;
+    left:0;
+    height: 100vh;
+    width:100%;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('https://cdn.pixabay.com/photo/2018/11/02/18/57/christmas-motif-3790809_960_720.jpg');
+    background-size: contain;
+    background-position: center center;
+
+  }
   
   
   @keyframes App-logo-spin {
