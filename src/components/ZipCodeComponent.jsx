@@ -48,6 +48,8 @@ import { useHistory } from "react-router-dom";
 import { useState } from "react";
 import { useNavigate } from 'react-router-dom';
 import FunctionClick
+
+
   from './FunctionClickComponent';
 const Create = () => {
   const [entry, setEntry] = useState('');
