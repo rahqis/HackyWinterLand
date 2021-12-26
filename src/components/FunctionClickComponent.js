@@ -8,7 +8,7 @@ function FunctionClick(){
     let navigate = useNavigate();
 
     return (
-        <button onClick ={() => {navigate("/home")}}>Home</button>
+        <button class="homeButton" onClick ={() => {navigate("/home")}}>Home</button>
     )
 }
 

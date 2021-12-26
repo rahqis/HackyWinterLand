@@ -87,7 +87,7 @@ const Create = () => {
           value={entry}
           onChange={(e) => setEntry(e.target.value)}
         />
-        <button>Enter</button>
+        <button class="enterButton">Enter</button>
       </form>
     </div>
   );
