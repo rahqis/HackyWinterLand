@@ -19,17 +19,17 @@ function ButtonClick(){
         <div class="divider"/>
         <button id="Environment" onClick={() => {navigate("/Create")}}>Environment</button>
         <div class="divider"/>
-        <button id="Health" onClick={() => {navigate("/NameForm")}}>Health</button>
+        <button id="Health" onClick={() => {navigate("/Create")}}>Health</button>
         <div class="divider"/>
-        <button id="Human Services" onClick={() => {navigate("/NameForm")}}>Human Services</button>
+        <button id="Human Services" onClick={() => {navigate("/Create")}}>Human Services</button>
         <div class="divider"/>
-        <button id="Human and Civil Rights" onClick={() => {navigate("/NameForm")}}>Human and Civil Rights</button>
+        <button id="Human and Civil Rights" onClick={() => {navigate("/Create")}}>Human and Civil Rights</button>
         <div class="divider"/>
-        <button id="International" onClick={() => {navigate("/NameForm")}}>International</button>
+        <button id="International" onClick={() => {navigate("/Create")}}>International</button>
         <div class="divider"/>
-        <button id="Religion" onClick={() => {navigate("/NameForm")}}>Religion</button>
+        <button id="Religion" onClick={() => {navigate("/Create")}}>Religion</button>
         <div class="divider"/>
-        <button id="Research and Public Policy" onClick={() => {navigate("/NameForm")}}>Research and Public Policy</button>
+        <button id="Research and Public Policy" onClick={() => {navigate("/Create")}}>Research and Public Policy</button>
         <div class="divider"/>
         </div>
     )
