@@ -12,7 +12,7 @@ function ButtonClick(){
         <button id="Animals" onClick={() => {navigate("/Create")}}>Animals</button>
         <div class="divider"/>
         <button id="Arts, Cultures, Humanities" onClick={() => {navigate("/Create")}}>Arts, Cultures, Humanities</button>
-        <div class="divider"/>
+        <div class="divider" />
         <button id="Community Development" onClick={() => {navigate("/Create")}}>Community Development</button>
         <div class="divider"/>
         <button id="Education" onClick={() => {navigate("/Create")}}>Education</button>
@@ -36,4 +36,3 @@ function ButtonClick(){
 }
 
 export default ButtonClick;
-
