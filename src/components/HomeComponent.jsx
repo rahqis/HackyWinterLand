@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import FunctionClick from './FunctionClickComponent';
-
+import ButtonClick from './ButtonClickComponent';
 function Home(){
 
     return(
@@ -10,6 +10,7 @@ function Home(){
         <p>
           List of Categories
         </p>
+        <ButtonClick/>
       </header>
       </div>
     )

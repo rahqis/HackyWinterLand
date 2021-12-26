@@ -20,12 +20,11 @@ function App() {
     <div className="App">
     </div>
       <Routes>
+        <Route exact path="/" element={<Home/>}/>
         <Route path="/home" element={<Home/>}/>
         <Route path="/Create" element={<Create/>}/>
         <Route path="/category" element={<Category/>}/>
       </Routes>
-      <ButtonClick/>
-      <FunctionClick/>
       </Router>
     )
 }

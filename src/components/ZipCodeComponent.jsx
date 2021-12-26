@@ -47,7 +47,8 @@ import { useHistory } from "react-router-dom";
 
 import { useState } from "react";
 import { useNavigate } from 'react-router-dom';
-
+import FunctionClick
+  from './FunctionClickComponent';
 const Create = () => {
   const [entry, setEntry] = useState('');
   let navigate = useNavigate();
@@ -56,11 +57,27 @@ const Create = () => {
     e.preventDefault();
     const blog = {entry};
     navigate('/Category');
+    const zip = 0;
+    if (!isNaN(entry)) {
+      zip = entry;
+      const requestOptions = {
+        method: "GET",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          zip: '&zip='.concat(entry)
+        }),
+      };
+      fetch('https://api.data.charitynavigator.org/v2/Organizations?app_id=292eca76&app_key=b76212ae948177fb114c287cbd15d46d'.concat(zip), requestOptions)
+        .then((response) => response.json())
+        .then((data) => console.log(data));
+    }
+      
     console.log(blog);
   }
 
   return (
     <div className="create">
+      <FunctionClick/>
       <h2>Enter your zipCode or a name of a Charity</h2>
       <form onSubmit={handleSubmit}>
         <label>Search:</label>
