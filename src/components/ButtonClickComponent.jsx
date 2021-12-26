@@ -19,6 +19,7 @@ function ButtonClick(){
     }
 
     return (
+        <div class="banner">
         <div class="buttons">
         <div class="divider"/>
         <button class="singleButton" id="Animals" onClick={onFinish} Id={"Animals"}>Animals</button>
@@ -43,6 +44,7 @@ function ButtonClick(){
         <div class="divider"/>
         <button class="singleButton" id="Research and Public Policy" onClick={onFinish} Id={"Research and Public Policy"}>Research and Public Policy</button>
         <div class="divider"/>
+        </div>
         </div>
     )
 }
