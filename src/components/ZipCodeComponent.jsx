@@ -47,21 +47,19 @@ import { useHistory } from "react-router-dom";
 
 import { useState } from "react";
 import { useNavigate } from 'react-router-dom';
-import FunctionClick
-
-
-  from './FunctionClickComponent';
+import FunctionClick  from './FunctionClickComponent';
+import categoryId from './categoryId';
+  
 const Create = () => {
   const [entry, setEntry] = useState('');
   let navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const blog = {entry};
     navigate('/Category');
-    const zip = 0;
+    let zip = 0;
     if (!isNaN(entry)) {
-      zip = entry;
+      zip = '&zip='.concat(entry);
       const requestOptions = {
         method: "GET",
         headers: { "Content-Type": "application/json" },
@@ -69,12 +67,15 @@ const Create = () => {
           zip: '&zip='.concat(entry)
         }),
       };
-      fetch('https://api.data.charitynavigator.org/v2/Organizations?app_id=292eca76&app_key=b76212ae948177fb114c287cbd15d46d'.concat(zip), requestOptions)
+      categoryId.zip = zip;
+      console.log(categoryId)
+      let baseLink = 'https://api.data.charitynavigator.org/v2/Organizations?app_id=292eca76&app_key=b76212ae948177fb114c287cbd15d46d';
+      let Link = baseLink.concat(zip);
+      fetch(Link)
         .then((response) => response.json())
         .then((data) => console.log(data));
     }
       
-    console.log(blog);
   }
 
   return (
