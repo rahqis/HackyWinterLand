@@ -1,19 +1,20 @@
 .App {
     text-align: center;
-}
-
-.App-logo {
+  }
+  
+  
+  .App-logo {
     height: 40vmin;
     pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
     .App-logo {
-        animation: App-logo-spin infinite 20s linear;
+      animation: App-logo-spin infinite 20s linear;
     }
-}
-
-.App-header {
+  }
+  
+  .App-header {
     background-color: white;
     min-height: 100vh;
     display: flex;
@@ -21,16 +22,16 @@
     align-items: center;
     justify-content: center;
     /* position: absolute;
-  top: 0; */
+    top: 0; */
     font-size: calc(10px + 2vmin);
     color: white;
-}
-
-.App-link {
+  }
+  
+  .App-link {
     color: #61dafb;
-}
-
-.Categories-header {
+  }
+  
+  .Categories-header{
     background-color: white;
     min-height: 100vh;
     display: flex;
@@ -40,88 +41,146 @@
     font-size: calc(10px + 2vmin);
     color: black;
     padding-right: 10px;
-}
-
-.buttons {
-    background-color: white;
-    display: inline-block;
-    margin-right: 20px;
-    text-align: center;
+  }
+  
+  .buttons{
+  
+    color: black;
+    justify-content: center;
     align-items: center;
-    padding-left: 69px;
-    padding-bottom: 5px;
-    height: 200px;
-    position: relative;
+    display: flex;
+    font-size: 15px;
+    height: 45px;
+    padding: 0px 14px;
     margin: 0;
     position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-}
-
-.divider {
-    background-color: #282c34;
-    width: 5px;
+    top: 40%;
+    left: 1%;
+    
+  }
+  
+  .singleButton{
+  
+    transition-duration: 0.4s;
+    border:rgba(255, 0, 0, 0.527);
     height: auto;
-    display: inline-block;
-}
-
-.form {
+    font-size: 20px;
+    color: black; 
+   
+  
+  }
+  
+  .singleButton:hover{
+    background-color: rgba(255, 0, 0, 0.527);
+    color: black;
+  }
+  
+  .homeButton{
+    transition-duration: 0.4s;
+    margin: 0;
+    border: 2px solid #4CAF50;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 25px;
+    height: 45px;
+    padding: 0px 14px;
+    margin: 0;
+    position: absolute;
+    top: 3%;
+    left: 92%;
+  
+   
+  }
+  
+  .homeButton:hover{
+    background-color: #4CAF50; /* Green */
+    color: black;
+  }
+  
+  
+  
+  
+  
+  .divider{
+    background-color: #282c34;
+    width: 20px;
+    height:auto;
+    display:inline-block;
+  }
+  
+  .form{
     color: #282c34;
     background-color: #282c34;
-}
-
-.label {
+  }
+  
+  .label{
     color: white;
     background-color: #282c34;
-}
-
-.testing {
+  }
+  
+  .testing{
     background-color: #282c34;
-}
-
-.body {
+  }
+  
+  .body{
     background-color: #282c34;
-}
-
-.NameForm {
+  }
+  
+  .NameForm{
     color: #282c34;
     background-color: #282c34;
-}
-
-.create {
-    max-width: 400px;
+  }
+  
+  .create {
+    max-width: 600px;
     margin: 0 auto;
     text-align: center;
-}
-
-.create label {
+  }
+  .create label {
     text-align: left;
     display: block;
-}
-
-.create h2 {
-    font-size: 20px;
-    color: #f1356d;
+  }
+  .create h2 {
+    font-size: 25px;
+    color: rgb(107, 166, 185);
     margin-bottom: 30px;
-}
-
-.create input,
-.create textarea,
-.create select {
+  }
+  .create input, .create textarea, .create select {
     width: 100%;
     padding: 6px 10px;
     margin: 10px 0;
     border: 1px solid #ddd;
     box-sizing: border-box;
     display: block;
-}
-
-@keyframes App-logo-spin {
+  }
+  
+  .enterButton{
+    background-color: rgba(0, 0, 0, 0.822);
+    border: 2px solid rgba(255, 0, 0, 0.479);
+    color: rgba(247, 64, 64, 0.644);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 25px;
+    height: auto;
+    padding: 0px 14px;
+    margin: 0;
+    position: absolute;
+    top: 25%;
+    left: 47%;
+  
+  }
+  
+  
+  
+  @keyframes App-logo-spin {
     from {
-        transform: rotate(0deg);
+      transform: rotate(0deg);
     }
     to {
-        transform: rotate(360deg);
+      transform: rotate(360deg);
     }
-}
+  }
+  
