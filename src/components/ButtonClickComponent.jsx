@@ -3,19 +3,18 @@ import React from 'react';
 
 import { useNavigate } from "react-router-dom";
 import { useState } from 'react';
+import categoryId from './categoryId';
 
 
 function ButtonClick(){
-    let [buttonid] = useState(0);
     let navigate = useNavigate();
     const onFinish = (event) =>{
-        navigate("/Create")
+        
         let id = event.target.id;
             // console.log(id)
-        buttonid = id;
-        console.log(buttonid)
-        
-
+        categoryId.catId = id;
+        console.log(categoryId)
+        navigate("/Create", categoryId)
     }
 
     return (
