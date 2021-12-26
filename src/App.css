@@ -210,6 +210,14 @@
     background-position: center center;
 
   }
+
+  .posts{
+    text-align: left;
+  }
+
+  .posts {
+    border-bottom: 1px solid black;
+  }
   
   
   @keyframes App-logo-spin {
