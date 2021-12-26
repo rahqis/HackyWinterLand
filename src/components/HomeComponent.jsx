@@ -5,13 +5,15 @@ import ButtonClick from './ButtonClickComponent';
 function Home(){
 
     return(
+        <div class="headingBanner">
         <div>
         <header className="Categories-header">
         <p>
-          List of Categories
+          Gravity for Charity
         </p>
         <ButtonClick/>
       </header>
+      </div>
       </div>
     )
 }

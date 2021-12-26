@@ -78,6 +78,7 @@ const Create = () => {
   }
 
   return (
+    <div className ="zipCodeBanner">
     <div className="create">
       <FunctionClick/>
       <h2>Enter your zipCode or a name of a Charity</h2>
@@ -91,6 +92,7 @@ const Create = () => {
         />
         <button class="enterButton">Enter</button>
       </form>
+    </div>
     </div>
   );
 }
