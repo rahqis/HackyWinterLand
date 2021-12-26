@@ -5,8 +5,8 @@ function Category(){
     return(
         <div class="Category">
         <p>Category
-            <FunctionClick/>
         </p>
+        <FunctionClick/>
         </div>
     )
 }
